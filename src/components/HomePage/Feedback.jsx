@@ -22,7 +22,7 @@ const Feedback = () => {
     const fetchFeedback = async () => {
       try {
         const response = await axios.get(
-          "https://quizlytics.jonomukti.org/all-feedback"
+          "https://quizlytics.anmobilesltd.co.uk/all-feedback"
         );
         setFeedback(response.data);
       } catch (err) {

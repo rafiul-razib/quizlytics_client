@@ -72,11 +72,11 @@ const QuizResult = ({
 
   let postUrl = "";
   if (quizStartKey) {
-    postUrl = "https://quizlytics.jonomukti.org/saveHistory";
+    postUrl = "https://quizlytics.anmobilesltd.co.uk/saveHistory";
   } else if (searchCategory) {
-    postUrl = "https://quizlytics.jonomukti.org/saveAiQuiz";
+    postUrl = "https://quizlytics.anmobilesltd.co.uk/saveAiQuiz";
   } else {
-    postUrl = "https://quizlytics.jonomukti.org/linkQuiz";
+    postUrl = "https://quizlytics.anmobilesltd.co.uk/linkQuiz";
   }
 
   const handleSaveRecord = async () => {

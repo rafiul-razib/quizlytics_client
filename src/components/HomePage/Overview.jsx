@@ -48,7 +48,7 @@ const Overview = () => {
   const fetchExaminees = async () => {
     try {
       const res = await axios.get(
-        "https://quizlytics.jonomukti.org/allExaminee"
+        "https://quizlytics.anmobilesltd.co.uk/allExaminee"
       );
       const data = res.data;
 

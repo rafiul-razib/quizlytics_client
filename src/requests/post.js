@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const postNewUser = async (newUser) => {
   try {
-    const response = await axios.post('https://quizlytics.jonomukti.org/registered_users', newUser);
+    const response = await axios.post('https://quizlytics.anmobilesltd.co.uk/registered_users', newUser);
     return response;
   } catch (error) {
     console.error("Error posting new user:", error);
@@ -12,7 +12,7 @@ export const postNewUser = async (newUser) => {
 
 export const postUserWithProvider = async (newUser) => {
   try {
-    const response = await axios.post('https://quizlytics.jonomukti.org/authenticating_with_providers', newUser);
+    const response = await axios.post('https://quizlytics.anmobilesltd.co.uk/authenticating_with_providers', newUser);
     return response;
   } catch (error) {
     console.error("Error posting user with provider:", error);

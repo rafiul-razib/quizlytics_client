@@ -37,7 +37,7 @@ const AllUser = () => {
   } = useQuery({
     queryKey: ["allUsers"],
     queryFn: async () => {
-      const { data } = await axios(`https://quizlytics.jonomukti.org/allUsers`);
+      const { data } = await axios(`https://quizlytics.anmobilesltd.co.uk/allUsers`);
       return data;
     },
     enabled: role === 'admin', // Only fetch if the role is 'admin'
@@ -59,7 +59,7 @@ if (roleError || userRoleError) return <div>Error loading data</div>;
     try {
       console.log(email);
 
-      const response = await axios.delete(`https://quizlytics.jonomukti.org/deleteUser?email=${email}`);
+      const response = await axios.delete(`https://quizlytics.anmobilesltd.co.uk/deleteUser?email=${email}`);
       if (response.data) {
         toast.success("Deleted successfully");
         refetch();
@@ -71,7 +71,7 @@ if (roleError || userRoleError) return <div>Error loading data</div>;
 
   const handleRoleChange = async (email, newRole) => {
     try {
-      const response = await axios.patch(`https://quizlytics.jonomukti.org/updateUserRole`, {
+      const response = await axios.patch(`https://quizlytics.anmobilesltd.co.uk/updateUserRole`, {
         email,
         role: newRole,
       });

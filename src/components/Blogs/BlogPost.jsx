@@ -17,7 +17,7 @@ export default function BlogPost() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://quizlytics.jonomukti.org/allBlogs"
+          "https://quizlytics.anmobilesltd.co.uk/allBlogs"
         );
         setPosts(response.data);
         console.log("Fetched posts:", response.data); // Debug fetched data

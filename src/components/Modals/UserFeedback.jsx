@@ -22,7 +22,7 @@ const UserFeedback = () => {
     const fetchFeedback = async () => {
       try {
         const response = await axios.get(
-          "https://quizlytics.jonomukti.org/all-feedback"
+          "https://quizlytics.anmobilesltd.co.uk/all-feedback"
         );
         setFeedback(response.data);
       } catch (err) {
@@ -40,7 +40,7 @@ const UserFeedback = () => {
     }
 
     try {
-      await axios.post("https://quizlytics.jonomukti.org/feedback", {
+      await axios.post("https://quizlytics.anmobilesltd.co.uk/feedback", {
         message,
         rating,
         name,
@@ -55,7 +55,7 @@ const UserFeedback = () => {
 
       // Optionally fetch updated feedback after submission
       const response = await axios.get(
-        "https://quizlytics.jonomukti.org/all-feedback"
+        "https://quizlytics.anmobilesltd.co.uk/all-feedback"
       );
       setFeedback(response.data);
     } catch (err) {

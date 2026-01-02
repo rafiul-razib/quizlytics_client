@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getMCQ = async (category, level) => {
     console.log(category, level);
     try {
-        const res = await axios.get(`https://quizlytics.jonomukti.org/quiz?category=${category}&skill=${level}`);
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/quiz?category=${category}&skill=${level}`);
         return res.data;
     } catch (error) {   
         console.error("Error fetching MCQ:", error);
@@ -15,7 +15,7 @@ export const getMCQ = async (category, level) => {
 export const getQuizByLink = async (artLink) => {
     
     try {
-        const res = await axios.get(`https://quizlytics.jonomukti.org/testByLink?link=${artLink}`);
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/testByLink?link=${artLink}`);
         return res.data;
     } catch (error) {   
         console.error("Error fetching MCQ:", error);
@@ -35,7 +35,7 @@ export const getMark = async(examId) => {
 
 export const getCustomQuiz = async(quizKey) =>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/getCustomQuizByKey?qKey=${quizKey}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/getCustomQuizByKey?qKey=${quizKey}`)
         return res.data;
     } catch(error){
         console.error("Error fetching Custom Quiz:", error);
@@ -46,7 +46,7 @@ export const getCustomQuiz = async(quizKey) =>{
 
 export const allCustomQuiz = async() =>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/allCustomQuiz`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/allCustomQuiz`)
         return res.data;
     } catch(error){
         console.error("Error fetching All Custom Quiz:", error);
@@ -56,7 +56,7 @@ export const allCustomQuiz = async() =>{
 
 export const getSubmissionByKey = async (key, email)=>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/historyByKey?qKey=${key}&email=${email}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/historyByKey?qKey=${key}&email=${email}`)
         return res.data;
     } catch(error){
         console.error("Error fetching submissions by key:", error)
@@ -65,7 +65,7 @@ export const getSubmissionByKey = async (key, email)=>{
 }
 export const getSubmissionByQuizTitle = async (searchCategory, email)=>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/historyByUserAi?qTitle=${searchCategory}&email=${email}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/historyByUserAi?qTitle=${searchCategory}&email=${email}`)
         return res.data;
     } catch(error){
         console.error("Error fetching submissions by key:", error)
@@ -76,7 +76,7 @@ export const getSubmissionByQuizTitle = async (searchCategory, email)=>{
 
 export const getLinkHistoryByUser = async(email)=>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/linkHistoryByUser?email=${email}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/linkHistoryByUser?email=${email}`)
         return res.data
     }
     catch(error){
@@ -87,7 +87,7 @@ export const getLinkHistoryByUser = async(email)=>{
 
 // export const getLeaders = async()=>{
 //     try{
-//         const res = await axios.get(`https://quizlytics.jonomukti.org/leaderboard`)
+//         const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/leaderboard`)
 //         return res.data;
 //     } catch(error){
 //         console.log("Error fetching leaderboard:", error);
@@ -96,7 +96,7 @@ export const getLinkHistoryByUser = async(email)=>{
 // }
 export const getExaminees = async () => {
     try {
-      const res = await axios.get("https://quizlytics.jonomukti.org/allExaminee");
+      const res = await axios.get("https://quizlytics.anmobilesltd.co.uk/allExaminee");
       return res.data; 
     } catch (error) {
       console.error("Error fetching allExaminee:", error);
@@ -105,7 +105,7 @@ export const getExaminees = async () => {
   };
 export const getMarks = async(email)=>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/userHistory?email=${email}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/userHistory?email=${email}`)
         return res.data;
     } catch(error){
         console.log("Error fetching leaderboard:", error);
@@ -114,7 +114,7 @@ export const getMarks = async(email)=>{
 }
 export const getSubmissionById = async(id)=>{
     try{
-        const res = await axios.get(`https://quizlytics.jonomukti.org/userHistory/${id}`)
+        const res = await axios.get(`https://quizlytics.anmobilesltd.co.uk/userHistory/${id}`)
         return res.data;
     } catch(error){
         console.log("Error fetching History:", error);

@@ -6,7 +6,7 @@ const useAllQuiz = () => {
     queryKey: ["customQuiz"],
     queryFn: async () => {
       const res = await axios.get(
-        "https://quizlytics.jonomukti.org/allCustomQuiz"
+        "https://quizlytics.anmobilesltd.co.uk/allCustomQuiz"
       );
       return res.data;
     },

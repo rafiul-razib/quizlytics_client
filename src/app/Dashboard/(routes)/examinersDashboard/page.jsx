@@ -67,7 +67,7 @@ const Page = () => {
       if (result.isConfirmed) {
         axios
           .delete(
-            `https://quizlytics.jonomukti.org/deleteCustomQuiz?qKey=${id}`
+            `https://quizlytics.anmobilesltd.co.uk/deleteCustomQuiz?qKey=${id}`
           )
           .then(() => {
             refetch();

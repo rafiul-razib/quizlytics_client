@@ -18,7 +18,7 @@ export default function Post({ params }) {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`https://quizlytics.jonomukti.org/blog/${id}`);
+        const response = await axios.get(`https://quizlytics.anmobilesltd.co.uk/blog/${id}`);
         setPost(response.data);
       } catch (err) {
         setError('Failed to load post');
@@ -29,7 +29,7 @@ export default function Post({ params }) {
 
     const fetchOtherPosts = async () => {
       try {
-        const response = await axios.get('https://quizlytics.jonomukti.org/allBlogs');
+        const response = await axios.get('https://quizlytics.anmobilesltd.co.uk/allBlogs');
         // Filter out the current post by ID and limit to 3 posts
         const otherPosts = response.data.filter((post) => post._id !== id).slice(0, 3);
         setOtherPosts(otherPosts);

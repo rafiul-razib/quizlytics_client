@@ -52,7 +52,7 @@ const CheckoutPage = ({ prices }) => {
 
       try {
         const response = await axios.post(
-          "https://quizlytics.jonomukti.org/paymentHistory",
+          "https://quizlytics.anmobilesltd.co.uk/paymentHistory",
           paymentInfo,
           {
             headers: {
